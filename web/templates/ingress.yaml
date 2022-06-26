@@ -1,0 +1,46 @@
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: hr-for-impact-web
+  namespace: {{ .Values.namespace.enabled | ternary .Values.namespace.name "default" }}
+spec:
+  entryPoints:
+  - websecure
+  routes:
+  - kind: Rule
+    match: Host(`hr-for-impact.fr`)
+    services:
+    - name: hr-for-impact
+      namespace: {{ .Values.namespace.enabled | ternary .Values.namespace.name "default" }}
+      port: 3000
+  tls:                              
+    secretName: hr-for-impact.fr-tls
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: web-hr-for-impact
+  namespace: {{ .Values.namespace.enabled | ternary .Values.namespace.name "default" }}
+spec:
+  entryPoints:
+  - web
+  routes:
+  - kind: Rule
+    match: Host(`hr-for-impact.fr`)
+    # middlewares: 
+    # - name: redirectscheme
+    services:
+    - name: hr-for-impact
+      namespace: {{ .Values.namespace.enabled | ternary .Values.namespace.name "default" }}
+      port: 3000
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: Middleware
+metadata:
+  name: redirectscheme
+  namespace: {{ .Values.namespace.enabled | ternary .Values.namespace.name "default" }}
+spec:
+  redirectScheme:
+    permanent: true
+    scheme: https
+    port: "443"
