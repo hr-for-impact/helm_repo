@@ -1,0 +1,1 @@
+{"auths":{"{{ .Values.docker_registry.docker_config_json.namespace }}":{"username":"{{ .Values.docker_registry.docker_config_json.username }}","password":"{{ .Values.docker_registry.docker_config_json.password }}","auth":{{ printf "%s:%s" .Values.docker_registry.docker_config_json.username .Values.docker_registry.docker_config_json.password | b64enc | quote }}}}}
