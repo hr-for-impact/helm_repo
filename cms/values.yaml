@@ -45,4 +45,6 @@ affinity: {}
 namespace: 
   name:
 
-env: []
+env: 
+  - name: sample
+    value: sample_value
