@@ -44,7 +44,19 @@ affinity: {}
 
 namespace: 
   name:
-
 env: 
-  - name: sample
-    value: sample_value
+  - name: from
+    value: helm
+
+database: 
+  host: 
+  port:
+  password:
+  username:
+  db_name:
+
+security: 
+  appKeys:
+  jwtSecret:
+  apiTokenSalt:
+  adminJwtSecret:

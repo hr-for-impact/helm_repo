@@ -3,7 +3,7 @@ entries:
   hr-for-impact:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-26T17:55:57.7154085+02:00"
+    created: "2022-06-26T18:14:21.8701231+02:00"
     description: A Helm chart for Kubernetes
     digest: 2ea010a232bd550894debb77ed32e164783776325d0255b5b3f976a45adf50fa
     name: hr-for-impact
@@ -13,7 +13,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-26T17:55:57.7143608+02:00"
+    created: "2022-06-26T18:14:21.8695659+02:00"
     description: A Helm chart for Kubernetes
     digest: 57c00c9fdb9e1401b949251152610c76f7965e664096efb3fdcecd59b39d0ec5
     name: hr-for-impact
@@ -24,9 +24,19 @@ entries:
   hr-for-impact-cms:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-26T17:55:57.7164398+02:00"
+    created: "2022-06-26T18:14:21.871149+02:00"
     description: A Helm chart for Kubernetes
-    digest: 1eb225080d94eac2b4560e2b76cfe6f94ca72ced3871e8a09d9ac78acc7c660d
+    digest: 82e4bd2df85ab8c38827574f38561f9db1f48e0d34bfe95687f0b9eb094b4bf0
+    name: hr-for-impact-cms
+    type: application
+    urls:
+    - https://hr-for-impact.github.io/helm_repo/hr-for-impact-cms-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-06-26T18:14:21.8706282+02:00"
+    description: A Helm chart for Kubernetes
+    digest: a19592eac9e6faed414d8bfb6977bb6aca0caf21a32ffe9b110900ba55407eb3
     name: hr-for-impact-cms
     type: application
     urls:
@@ -34,7 +44,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-26T17:55:57.7161534+02:00"
+    created: "2022-06-26T18:14:21.8701231+02:00"
     description: A Helm chart for Kubernetes
     digest: 4fbc87ac1490bde110442d80a949ddf6d953440e8564f7bda95d94fbf5fb3a68
     name: hr-for-impact-cms
@@ -42,4 +52,4 @@ entries:
     urls:
     - https://hr-for-impact.github.io/helm_repo/hr-for-impact-cms-0.1.0.tgz
     version: 0.1.0
-generated: "2022-06-26T17:55:57.7137392+02:00"
+generated: "2022-06-26T18:14:21.8685906+02:00"
