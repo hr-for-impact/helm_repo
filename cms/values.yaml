@@ -50,7 +50,7 @@ env:
 
 database: 
   host: 
-  port:
+  port: "1234"
   password:
   username:
   db_name:
