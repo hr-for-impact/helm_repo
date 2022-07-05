@@ -20,6 +20,7 @@ spec:
       {{- end }}
       labels:
         app: {{ include "chart.fullname" . }}
+        version: {{ .Values.image.tag | default .Chart.AppVersion }}
         {{- include "chart.selectorLabels" . | nindent 8 }}
     spec:
       {{- with .Values.imagePullSecrets }}
