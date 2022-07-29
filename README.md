@@ -1,4 +1,4 @@
 ```sh
 # refresh index.yaml
-$ helm repo index .  --url=https://hr-for-impact.github.io/helm-chart
+$ helm repo index .  --url=https://hr-for-impact.github.io/helm_repo
 ```
