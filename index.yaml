@@ -1,9 +1,20 @@
 apiVersion: v1
 entries:
+  backoffice:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-08-02T08:33:45.7151253+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 8fb2a3da03ed14d235ba0faa6c84e04e0cab839a239094331ed283c58c58a246
+    name: backoffice
+    type: application
+    urls:
+    - https://hr-for-impact.github.io/helm_repo/backoffice-0.1.0.tgz
+    version: 0.1.0
   hr-for-impact:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:23.013238+02:00"
+    created: "2022-08-02T08:33:45.7517424+02:00"
     description: A Helm chart for Kubernetes
     digest: eddfd677afb16f2831eda28f028cdf154c0267ce0fdbc98481be4aff66b4dcea
     name: hr-for-impact
@@ -13,7 +24,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:23.0087994+02:00"
+    created: "2022-08-02T08:33:45.7472788+02:00"
     description: A Helm chart for Kubernetes
     digest: 03a19a29d09c67df2d7ecd40507ac189396aec209b8995dd26d1e7b099052357
     name: hr-for-impact
@@ -23,7 +34,7 @@ entries:
     version: 0.1.3
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:22.9971559+02:00"
+    created: "2022-08-02T08:33:45.7383521+02:00"
     description: A Helm chart for Kubernetes
     digest: af05bb0051004b54a78e1e0a3555c307bbfbb51557293e176e5a24f42bed159a
     name: hr-for-impact
@@ -33,7 +44,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:22.9920686+02:00"
+    created: "2022-08-02T08:33:45.7311324+02:00"
     description: A Helm chart for Kubernetes
     digest: 2ea010a232bd550894debb77ed32e164783776325d0255b5b3f976a45adf50fa
     name: hr-for-impact
@@ -43,7 +54,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:22.9847077+02:00"
+    created: "2022-08-02T08:33:45.7238446+02:00"
     description: A Helm chart for Kubernetes
     digest: 57c00c9fdb9e1401b949251152610c76f7965e664096efb3fdcecd59b39d0ec5
     name: hr-for-impact
@@ -54,7 +65,7 @@ entries:
   hr-for-impact-cms:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:23.0579824+02:00"
+    created: "2022-08-02T08:33:45.7968583+02:00"
     description: A Helm chart for Kubernetes
     digest: 38e8b2f1ed5a31db55c1a6ec1bc81e1823cbe0de4d90287d2ea41b43c467b126
     name: hr-for-impact-cms
@@ -64,7 +75,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:23.0569749+02:00"
+    created: "2022-08-02T08:33:45.792848+02:00"
     description: A Helm chart for Kubernetes
     digest: db1a611f225e7352fec209f1047fb2f1e27b9f74779dcd7367e039d68868fa63
     name: hr-for-impact-cms
@@ -74,7 +85,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:23.0499439+02:00"
+    created: "2022-08-02T08:33:45.7849169+02:00"
     description: A Helm chart for Kubernetes
     digest: 1b3062061c7b163533040640edda38da72c34571d3354556493b86544c1de982
     name: hr-for-impact-cms
@@ -84,7 +95,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:23.0444266+02:00"
+    created: "2022-08-02T08:33:45.7799489+02:00"
     description: A Helm chart for Kubernetes
     digest: cd16923c3a833ad75c60ee4e73a2c01a67b1e9408e584698538334164c668d9c
     name: hr-for-impact-cms
@@ -94,7 +105,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:23.0378505+02:00"
+    created: "2022-08-02T08:33:45.7764451+02:00"
     description: A Helm chart for Kubernetes
     digest: 6e2a58e2d553f35da4e568a994ef751d4f849ec7a3643471068b0d6f04d77620
     name: hr-for-impact-cms
@@ -104,7 +115,7 @@ entries:
     version: 0.1.4
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:23.0315231+02:00"
+    created: "2022-08-02T08:33:45.7714476+02:00"
     description: A Helm chart for Kubernetes
     digest: 26344a4e5d99f659d44950483f10e315e538990a7cc59cab3f2a2e94146f6dce
     name: hr-for-impact-cms
@@ -114,7 +125,7 @@ entries:
     version: 0.1.2
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:23.0243597+02:00"
+    created: "2022-08-02T08:33:45.766704+02:00"
     description: A Helm chart for Kubernetes
     digest: a19592eac9e6faed414d8bfb6977bb6aca0caf21a32ffe9b110900ba55407eb3
     name: hr-for-impact-cms
@@ -124,7 +135,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-07-29T14:45:23.0168639+02:00"
+    created: "2022-08-02T08:33:45.7561555+02:00"
     description: A Helm chart for Kubernetes
     digest: 4fbc87ac1490bde110442d80a949ddf6d953440e8564f7bda95d94fbf5fb3a68
     name: hr-for-impact-cms
@@ -132,4 +143,4 @@ entries:
     urls:
     - https://hr-for-impact.github.io/helm_repo/hr-for-impact-cms-0.1.0.tgz
     version: 0.1.0
-generated: "2022-07-29T14:45:22.9749732+02:00"
+generated: "2022-08-02T08:33:45.7119311+02:00"
