@@ -5,12 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: 
+  repository:
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "0.0.0"
 
-imagePullSecrets: 
+imagePullSecrets:
   - name: registry-secret
 
 nameOverride: ""
@@ -42,21 +42,29 @@ tolerations: []
 
 affinity: {}
 
-namespace: 
+namespace:
   name:
-env: 
+env:
   - name: from
     value: helm
 
-database: 
-  host: 
+database:
+  host:
   port: "1234"
   password:
   username:
   db_name:
 
-security: 
+security:
   appKeys:
   jwtSecret:
   apiTokenSalt:
   adminJwtSecret:
+
+livenessProbe:
+  initialDelaySeconds:
+  periodSeconds:
+
+readinessProbe:
+  initialDelaySeconds:
+  periodSeconds:

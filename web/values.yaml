@@ -48,3 +48,12 @@ docker_registry:
     username: 
     password: 
 env: []
+
+
+livenessProbe:
+  initialDelaySeconds:
+  periodSeconds:
+
+readinessProbe:
+  initialDelaySeconds:
+  periodSeconds:
