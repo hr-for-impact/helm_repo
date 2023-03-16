@@ -1,3 +1,9 @@
+# Create new chart
+
+```sh
+$ helm create <chart-name>
+```
+
 # Modify and publish chart
 
 ## Create helm chart package
