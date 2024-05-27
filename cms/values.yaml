@@ -16,6 +16,12 @@ imagePullSecrets:
 nameOverride: ""
 fullnameOverride: ""
 
+ingress:
+  issuer: letsencrypt
+  class: public
+  domain: aerowork.fr
+  subdomain: cms
+
 serviceAccount:
   create: false
   annotations: {}

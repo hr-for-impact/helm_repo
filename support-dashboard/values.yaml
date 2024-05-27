@@ -13,6 +13,12 @@ image:
 imagePullSecrets:
   - name: registry-secret
 
+ingress:
+  issuer: letsencrypt
+  class: public
+  domain: aerowork.fr
+  subdomain: advice
+
 nameOverride: ""
 fullnameOverride: ""
 
