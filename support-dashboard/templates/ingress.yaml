@@ -1,0 +1,27 @@
+---
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: {{ include "support-dashboard.fullname" . }}
+  labels:
+    {{- include "support-dashboard.labels" . | nindent 4 }}
+  annotations:
+    cert-manager.io/cluster-issuer: {{ .Values.ingress.issuer }}
+spec:
+  ingressClassName: {{ .Values.ingress.class }}
+  rules:
+  - host: "{{ .Values.ingress.subdomain }}.{{ .Values.ingress.domain }}"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: {{ include "support-dashboard.fullname" . }}
+            port:
+              number: {{ .Values.service.port }}
+  tls:
+  - secretName: {{ include "support-dashboard.fullname" . }}-tls
+    hosts:
+    - "{{ .Values.ingress.subdomain }}.{{ .Values.ingress.domain }}"
+...
